@@ -48,10 +48,28 @@ benchmark/
 │   ├── template.yaml         # Copy this — works for ANY domain
 │   └── athenacommandcenter.yaml  # First contribution (freight/logistics)
 ├── metrics/
-│   └── proposed.md           # Proposed benchmark metrics
-├── reports/                  # Phase 3 output
+│   └── proposed.md           # Proposed benchmark metrics (universal + domain-specific)
+├── tools/
+│   ├── validate.py           # Validate your YAML before submitting
+│   └── synthesize.py         # Generate cross-contributor benchmark report
+├── reports/
+│   └── snapshot-YYYY-MM-DD.md  # Auto-generated benchmark snapshots
 └── data/                     # Standardized datasets
 ```
+
+## Tools
+
+**Validate your contribution** before submitting:
+```bash
+python tools/validate.py contributions/your-name.yaml
+```
+
+**Generate a benchmark snapshot** from all contributions:
+```bash
+python tools/synthesize.py > reports/snapshot-$(date +%Y-%m-%d).md
+```
+
+The synthesizer compares all contributions and produces: domain coverage, metrics overlap, failure mode patterns, data quality assessments, collaboration matches (where one contributor's "could build" matches another's "would use"), and gap analysis.
 
 ## Who Should Contribute
 

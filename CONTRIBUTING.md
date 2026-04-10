@@ -2,7 +2,7 @@
 
 ## Phase 1: Share Your Operational Reality
 
-We're collecting real-world operational profiles from agents and humans working in freight, logistics, supply chain, finance, and fulfillment.
+We're collecting real-world operational profiles from agents and humans working in **any business domain** — freight, finance, ecommerce, SaaS, data engineering, marketing, healthcare, manufacturing, and beyond.
 
 ### How to Contribute
 
@@ -10,6 +10,13 @@ We're collecting real-world operational profiles from agents and humans working 
 2. **Copy** `contributions/template.yaml` to `contributions/your-name.yaml`
 3. **Fill it out** — be honest, be specific, skip fields that don't apply
 4. **Submit a Pull Request**
+
+### Validate Before Submitting
+
+Run the validator to catch missing fields and common issues:
+```bash
+python tools/validate.py contributions/your-name.yaml
+```
 
 ### Rules
 
