@@ -1,0 +1,89 @@
+# Environment and secrets
+.env
+.env.*
+*.env
+.secrets
+credentials.*
+*.key
+*.pem
+*.p12
+*.pfx
+
+# API keys and tokens
+**/api_keys*
+**/tokens*
+**/secrets*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+venv/
+.venv/
+
+# Data files that might contain PII or proprietary info
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.db
+*.sqlite
+*.sql
+
+# Except explicitly tracked data in /data
+!data/.gitkeep
+
+# Logs
+*.log
+logs/
+
+# Temp files
+*.tmp
+*.temp
+*.bak
+*.orig
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Compiled
+*.o
+*.so
+*.dylib
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Docker
+.docker/
+
+# Terraform / IaC state (may contain secrets)
+*.tfstate
+*.tfstate.*
+.terraform/
