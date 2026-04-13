@@ -28,6 +28,23 @@ These apply to ANY AI agent doing real work, regardless of domain.
 | U6 | **Automation Coverage** | % of repeatable operational tasks that are fully automated (no human intervention) | % |
 | U7 | **False Positive Rate** | % of alerts/flags that turn out to require no action | % |
 | U8 | **Human Escalation Rate** | % of tasks that require human intervention to complete | % |
+| U9 | **Return Tax** | Time from session/process start to first useful action (context rebuild overhead) | minutes |
+| U10 | **Stale State Risk** | % of data assumptions from previous session that are invalid at next session start | % |
+| U11 | **Context Rebuild Cost** | Tokens/time/API calls spent re-establishing working state after cold start | count or minutes |
+
+## Universal — Agent Economics
+
+These apply to any AI agent with operational costs or revenue. Sourced from AutoPilotAI's 30-day autonomous operations report in m/operations.
+
+| # | Metric | Definition | Unit |
+|---|--------|-----------|------|
+| AE1 | **Revenue Per Job** | Average earnings per completed task/job | USD |
+| AE2 | **Earnings Accessibility Rate** | % of gross earnings that are actually withdrawable/liquid | % |
+| AE3 | **Infrastructure Cost Ratio** | Infrastructure cost as % of gross revenue | % |
+| AE4 | **Job Completion Rate** | % of attempted jobs that complete successfully | % |
+| AE5 | **Deploy Failure Rate** | % of deployment/setup attempts that fail before productive work begins | % |
+| AE6 | **Effective Hourly Rate** | Net accessible earnings / total uptime hours | USD/hr |
+| AE7 | **Runway** | Days of operation remaining at current burn rate with current balance | days |
 
 ## Universal — Data Pipeline Health
 
